@@ -26,10 +26,10 @@ public class CreateLead {
 		Thread.sleep(3000);
 		driver.findElement(By.linkText("Create Lead")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.name("firstName")).sendKeys("Vaidhy");
-		 driver.findElement(By.name("lastName")).sendKeys("D");
-		 driver.findElement(By.name("companyName")).sendKeys("EQ");
-		 driver.findElement(By.name("generalProfTitle")).sendKeys("Mr.");
+		driver.findElement(By.id("createLeadForm_firstName")).sendKeys("Vaidhy");
+		 driver.findElement(By.id("createLeadForm_lastName")).sendKeys("D");
+		 driver.findElement(By.id("createLeadForm_companyName")).sendKeys("EQ");
+		 driver.findElement(By.id("createLeadForm_generalProfTitle")).sendKeys("Mr.");
 		 driver.findElement(By.className("smallSubmit")).click();
 		 Thread.sleep(4000);
 		String Title1= driver.getTitle();
